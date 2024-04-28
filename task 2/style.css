@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "STARWARS";
+  src: url("../assets/1351-font.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "STARWARS";
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 187, 71, 0.8352941176);
+  box-shadow: 0 0 10px rgb(255, 210, 114);
+  border-radius: 10px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container select, .container input {
+  height: 35px;
+  background-color: rgba(104, 117, 117, 0.2588235294);
+  font-size: 14px;
+  font-family: "STARWARS";
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+}
+.container #searchButton {
+  width: 20rem;
+  height: 35px;
+  border-radius: 10px;
+  font-family: "STARWARS";
+  background-color: #bdc7bc;
+  font-size: 15px;
+  cursor: pointer;
+  justify-self: center;
+  transition: background-color 0.3s;
+}
+.container #searchButton:hover {
+  background-color: #eaede7;
+}
+.container #error, .container #finally {
+  font-size: 15px;
+  margin: 0.5rem;
+}
+.container .loading {
+  margin-top: 15px;
+  border: 6px solid rgba(246, 243, 241, 0.6431372549);
+  border-top: 6px solid rgba(255, 255, 255, 0.8156862745);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

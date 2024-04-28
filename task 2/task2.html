@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <label for="entity">Что мы ищем?</label>
+        <select id="entity">
+            <option value="people">Персонажи</option>
+            <option value="planets">Планеты</option>
+            <option value="films">Фильмы</option>
+            <option value="species">Виды</option>
+            <option value="starships">Космические корабли</option>
+            <option value="vehicles">Транспортные средства</option>
+        </select>
+    </div>
+    <div>
+        <label for="id">Введите число (1-10):</label>
+        <input type="number" id="id" min="1" max="10">
+    </div>
+    
+    <button id="searchButton">Поиск</button>
+    <div id="loading"></div>
+    <div id="error"></div>
+    <div id="result"></div>
+    <div id="finally"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
